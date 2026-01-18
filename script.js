@@ -212,8 +212,8 @@ function showPotions() {
 
         <h3>Brewing</h3>
         <div class="brewing">
-          <div class="slot"><img src="icons/nether_wart.png"></div>
-          <div class="slot"><img src="icons/${potion.base}.png"></div>
+          <div class="slot"><img src="./icons/nether_wart.png"></div>
+          <div class="slot"><img src="./icons/${potion.base}.png"></div>
           <div class="slot"></div>
         </div>
 
@@ -245,7 +245,7 @@ function showCrafting() {
       recipe.grid.flat().forEach((cell) => {
         gridHTML += `
           <div class="slot">
-            ${cell ? `<img src="icons/${cell}.png">` : ""}
+            ${cell ? `<img src="./icons/${cell}.png">` : ""}
           </div>
         `;
       });
